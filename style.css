@@ -1,0 +1,92 @@
+/* Definindo o estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor de texto */
+  }
+  
+  /* Centralizando o conteúdo */
+  .container {
+    margin-top: 50px;
+    max-width: 600px; /* Limita a largura máxima */
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Cor azul para o título */
+  }
+  
+  /* Estilo para o formulário de entrada */
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda suave */
+    width: 100%; /* Garante que o input ocupe 100% do container */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    margin-bottom: 15px; /* Espaço entre os campos */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer; /* Cursor de clique */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Efeito de hover no botão */
+  }
+  
+  /* Estilo da lista de usuários */
+  ul#listaUsuarios {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+  }
+  
+  ul#listaUsuarios li {
+    background-color: #f9f9f9; /* Cor de fundo para itens da lista */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Espaço entre o nome e os botões */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  ul#listaUsuarios li button {
+    margin-left: 10px; /* Espaço entre os botões */
+  }
+  
+  ul#listaUsuarios li button:hover {
+    background-color: #e60000; /* Efeito de hover para o botão de excluir */
+  }
+  
+  /* 📌 Responsividade para telas menores */
+  @media (max-width: 600px) {
+    .container {
+      margin: 10px; /* Reduzindo o espaço das laterais */
+      padding: 15px; /* Reduzindo o padding */
+    }
+  
+    input, button {
+      width: 100%; /* Faz com que os elementos ocupem toda a largura */
+      margin-bottom: 10px; /* Ajusta o espaçamento entre os campos */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Reduz o tamanho da fonte do título */
+    }
+  }
+  
